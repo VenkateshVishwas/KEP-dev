@@ -12,8 +12,14 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
+app.get("/", function(req, res) {
+  res.render("ATFD");
+});
+
+
+
 mongoose.connect('mongodb://localhost:27017/myDatabase');
 
-app.listen(4000, function() {
-  console.log("Server started on port 4000");
+app.listen(3000, function() {
+  console.log("Server started on port 3000");
 });

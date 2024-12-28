@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: 'calibri';
+    font-size: 16px;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    max-width: 8.27in;
+}
+
+/* .container {
+    margin: 0 auto;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 11.69in;
+    
+} */
+
+header {
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+header .header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    max-width: 100px;
+}
+
+header .company-details {
+    text-align: left;
+}
+
+h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-align: center;
+    color: blue;
+}
+
+p {
+    margin: 5px 0;
+}
+
+ul {
+    margin: 5px 0 5px 20px;
+    padding: 0;
+    list-style-type: disc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+
+table th, table td {
+    border: 1px solid #3bb4d5;
+    padding: 2px;
+    padding-left :40px; 
+    text-align: left;
+    font-size: 16px;
+    /* vertical-align: auto; */
+}
+
+
+footer {
+    margin-top: 20px;
+    font-size: 10px;
+    text-align: center;
+    border-top: 1px solid #000;
+    padding-top: 10px;
+}
+/* .a4-border {
+    height: 100%;
+    height: auto;
+    margin: 0;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    background-color: #fff;
+} */
+
+    
+body {
+    font-family: 'calibri';
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    width: 8.27in; /* A4 width */
+    height: 11.69in; /* A4 height */
+    margin: 0 auto; /* Center the page */
+    border: 1px solid #000; /* Full page border (if needed) */
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow: hidden; /* Prevents content overflow */
+    page-break-after: always; /* Forces a new page after each container */
+}
+
+.a4-border {
+    width: calc(100% - 40px); /* Inner border width with padding */
+    height: calc(100% - 42px); /* Adjusted height for exact fit */
+    margin: 20px; /* Space between the inner border and container edge */
+    border: 2px solid #000; /* Inner border */
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+header img {
+    width: 100%; /* Optional: Adjust to fit the container */
+    height: auto;
+    display: block;
+    margin-bottom: 20px; /* Space below the image */
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 8.27in;
+        background: #fff;
+    }
+    .container {
+        border: none; /* Remove container border for printing if needed */
+    }
+    .a4-border {
+        page-break-inside: avoid; /* Prevent content from splitting inside */
+    }
+}
+
+
